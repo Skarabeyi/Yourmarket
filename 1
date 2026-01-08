@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>MiniExpress</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>MiniExpress</h1>
+  <input type="text" id="search" placeholder="Поиск товаров...">
+  <button onclick="openCart()">🛒 Корзина (<span id="cartCount">0</span>)</button>
+</header>
+
+<main id="products"></main>
+
+<div id="cart" class="cart hidden">
+  <h2>Корзина</h2>
+  <ul id="cartItems"></ul>
+  <button onclick="closeCart()">Закрыть</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
